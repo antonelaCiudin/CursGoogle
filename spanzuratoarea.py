@@ -9,8 +9,6 @@ for item in word:
         word_list.append('_')
     else:
         word_list.append(item.lower())
-        # if item in unique_list:
-            # unique_list.remove(item)
 
 print(" ".join(word_list))
 word_len = len(unique_list) - 2
@@ -30,10 +28,10 @@ while count_nr <= word_len:
         print(f"Litera a fost deja incercata, lista literelor incercate: {' '.join(list_already_checked)}")
     else:
         if user_letter in word:
-            # word_list[word.index(user_letter)] = user_letter
-            for iterator, value in enumerate(word):
-                if user_letter == value:
-                    word_list[iterator] = user_letter
+            word_list[word.index(user_letter)] = user_letter
+            # for iterator, value in enumerate(word):
+            #     if user_letter == value:
+            #         word_list[iterator] = user_letter
 
             print(" ".join(word_list))
         else:

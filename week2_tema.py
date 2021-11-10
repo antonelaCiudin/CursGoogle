@@ -1,11 +1,11 @@
-list = [7, 8, 9, 2, 3, 1, 4, 10, 5, 6]
-print(list)
+l = [7, 8, 9, 2, 3, 1, 4, 10, 5, 6]
+print(l)
 
-list_asc = list.copy()
+list_asc = l.copy()
 list_asc.sort()
 print(list_asc)
 
-list_desc = list.copy()
+list_desc = l.copy()
 list_desc.sort(reverse=True)
 # list_desc.sort()
 # list_desc.reverse()
